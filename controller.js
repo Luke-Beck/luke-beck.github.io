@@ -8,4 +8,9 @@ window.onload = () => {
 
   hamburger.addEventListener('click', () => toggle(navMenu, 'is-active'));
   Array.from(navItems).forEach(e => e.addEventListener('click', toggleNav));
+  
+  // Load particles
+  particlesJS.load('particles-js', 'assets/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
 }
