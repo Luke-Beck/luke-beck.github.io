@@ -11,7 +11,8 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-particlesJS('particles-js',
+if (window.particlesJS) {
+  particlesJS('particles-js',
     /*{
   "particles": {
     "number": {
@@ -234,4 +235,5 @@ particlesJS('particles-js',
       "retina_detect": true
     }
 
-);
+  );
+}
